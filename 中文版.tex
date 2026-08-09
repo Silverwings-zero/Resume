@@ -1,0 +1,196 @@
+\documentclass[12pt, letterpaper]{article}
+
+% ----------------------------------------------------------------------------------
+% PACKAGES
+% ----------------------------------------------------------------------------------
+\usepackage[margin=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{ltablex}
+\usepackage{CJKutf8}
+
+\keepXColumns
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+% ----------------------------------------------------------------------------------
+% FORMATTING
+% ----------------------------------------------------------------------------------
+\definecolor{linkblue}{RGB}{32, 64, 151}
+\hypersetup{colorlinks=true, linkcolor=linkblue, urlcolor=linkblue}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-2pt}\hrule height 1pt \vspace{3pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\newlength{\datecolwidth}
+\setlength{\datecolwidth}{2.5cm}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+% ----------------------------------------------------------------------------------
+% HEADER
+% ----------------------------------------------------------------------------------
+\noindent
+\begin{minipage}[t]{0.65\textwidth}
+    {\huge \textbf{钱万里}} \\
+    \vspace{2pt}
+    \href{mailto:wanliqia@usc.edu}{wanliqia@usc.edu} $\cdot$ (678)-956-4378 $\cdot$ Los Angeles, CA
+\end{minipage}%
+\begin{minipage}[t]{0.35\textwidth}
+    \raggedleft
+    \href{https://www.linkedin.com/in/wanli-qian-7bb399192/}{LinkedIn} \\
+    \href{https://github.com/silverwings-zero}{GitHub} \\
+    \href{https://scholar.google.com/citations?user=azFoAIkAAAAJ&hl=en}{Google Scholar}
+\end{minipage}
+
+\vspace{0.2cm}
+
+% ----------------------------------------------------------------------------------
+% CURRENT APPOINTMENT
+% ----------------------------------------------------------------------------------
+\section*{当前任职}
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    \textbf{2024--至今} & \textbf{USC HaRVI Lab，博士研究员} \\
+    & \begin{itemize}[leftmargin=*, nosep, after=\vspace{4pt}]
+        \item 研究机器人如何通过多模态感知、语言与动作获取、表征并生成丰富的触觉理解能力。
+        \item 开发受语言条件控制的生成模型，从力、加速度以及视觉触觉数据中合成逼真的触觉与振动信号。
+        \item 研究主动触觉感知，设计可根据不确定性自适应调整机器人探索动作的策略，以推断物体与表面属性。
+        \item 构建带有触觉反馈的双边遥操作系统，用于远程表面感知、操作与数据采集。
+        \item 构建大规模多模态触觉数据集（200+种材料），整合敲击、滑动、音频及情感描述信息，以支持可扩展学习。
+        \item 探索将 VR/AR 与基于语言的交互结合，用于触觉与纹理创作。
+    \end{itemize}
+\end{tabularx}
+
+% ----------------------------------------------------------------------------------
+% EDUCATION
+% ----------------------------------------------------------------------------------
+\section*{教育背景}
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    \textbf{2024--至今} & \textbf{University of Southern California} \\
+    & \textit{计算机科学博士} \\[4pt]
+    \textbf{2022--2024} & \textbf{University of Chicago} \\
+    & \textit{计算机科学硕士（博士预科）} \\[4pt]
+    \textbf{2018--2022} & \textbf{Georgia Institute of Technology} \\
+    & \textit{计算机科学学士} \\
+\end{tabularx}
+
+% ----------------------------------------------------------------------------------
+% PUBLICATIONS
+% ----------------------------------------------------------------------------------
+\section*{论文发表}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    
+    \textbf{2026} & \textbf{Wanli Qian}, Michael Gu, Aiden Chang, Shihan Lu, Heather Culbertson. ``Language-Guided Multimodal Texture Authoring via Generative Models.'' \textit{Proc. IEEE Haptics Symposium (HAPTICS)}, 2026. \textbf{（杰出技术长文奖）} \\
+    & \href{https://arxiv.org/abs/2604.06489}{[PDF]} / \href{https://youtu.be/f5vz52uPw-4?si=IwPee25Zb0pjWJ3Y}{[Video]} \\[6pt]
+
+    \textbf{2025} & Matthew Jeung, Anup Sathya, \textbf{Wanli Qian}, Steven Arellano, Luke Jimenez, Ken Nakagaki. ``Shape n'Swarm: Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs.'' \textit{Proc. ACM User Interface Software and Technology (UIST)}, 2025. \\
+    & \href{https://dl.acm.org/doi/10.1145/3746059.3747781}{[PDF]} / \href{https://www.youtube.com/watch?v=5u0M9yL7tyY}{[Video]} \\[6pt]
+
+    & Ran Zhou, Jianru Ding, Chenfeng Gao, \textbf{Wanli Qian}, Benjamin Erickson, Madeline Balaam, Daniel Leithinger, Ken Nakagaki. ``Shape-Kit: A Design Toolkit for Crafting On-Body Expressive Haptics.'' \textit{Proc. ACM CHI Conference on Human Factors in Computing Systems}, 2025. \\
+    & \href{https://dl.acm.org/doi/10.1145/3706599.3721280}{[PDF]} / \href{https://www.youtube.com/watch?v=W_rZg8f6lZM}{[Video]} \\[6pt]
+
+    \textbf{2024} & \textbf{Wanli Qian}*, Chenfeng Gao*, Anup Sathya, Ryo Suzuki, Ken Nakagaki. ``SHAPE-IT: Exploring Text-to-Shape-Display for Generative Shape-Changing Behaviors with LLMs.'' \textit{Proc. ACM User Interface Software and Technology (UIST)}, 2024. \\
+    & \href{https://dl.acm.org/doi/10.1145/3654777.3676348}{[PDF]} / \href{https://www.youtube.com/watch?v=2NxzOBc7AdQ}{[Video]} \\[6pt]
+
+    & Chenfeng Gao*, \textbf{Wanli Qian}*, Richard Liu, Rana Hanocka, Ken Nakagaki. ``Towards Multimodal Interaction with AI-Infused Shape-Changing Interfaces.'' \textit{Adjunct Proc. ACM UIST}, 2024. （*共同一作） \\
+    & \href{https://dl.acm.org/doi/10.1145/3672539.3686315}{[PDF]} \\[6pt]
+
+    \textbf{2022} & Gerry Chen, Sereym Baek, JD Florez, \textbf{Wanli Qian}, Sang-won Leigh, Seth Hutchinson, Frank Dellaert. ``GTGraffiti: Spray Painting Graffiti Art from Human Painting Motions with a Cable Driven Parallel Robot.'' \textit{Proc. IEEE Intl. Conf. on Robotics and Automation (ICRA)}, 2022. \\
+    & \href{https://ieeexplore.ieee.org/document/9812008}{[PDF]} / \href{https://www.youtube.com/watch?v=R4ySYTNGv6s}{[Video]} \\[6pt]
+
+    & \textbf{Wanli Qian}, Zhe Yan, Zhe Zhu, and Wei Yin. 
+    ``Weakly Supervised Part-Based Method for Combined Object Detection in Remote Sensing Imagery.'' 
+    \textit{IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)}, 
+    vol. 15, pp. 5024--5036, 2022. \\
+    & \href{https://ieeexplore.ieee.org/document/9789416}{[PDF]} \\[6pt]
+
+    \textbf{2021} & Hui Wang, Hao Li, \textbf{Wanli Qian}, Wenhui Diao, Liangjin Zhao, Jinghua Zhang, and Daobing Zhang. 
+    ``Dynamic Pseudo-Label Generation for Weakly Supervised Object Detection in Remote Sensing Images.'' 
+    \textit{Remote Sensing}, vol. 13, no. 8, p. 1461, 2021. \\
+    & \href{https://www.mdpi.com/2072-4292/13/8/1461}{[PDF]} \\[6pt]
+\end{tabularx}
+
+% ----------------------------------------------------------------------------------
+% PAST EXPERIENCE
+% ----------------------------------------------------------------------------------
+\section*{过往经历}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    \textbf{2022--2024} & \textbf{University of Chicago AxLab，博士预科研究员} \\
+    & \begin{itemize}[leftmargin=*, nosep, after=\vspace{4pt}]
+        \item 探索自然语言如何作为高层交互接口，用于动态物理形状显示系统的创作与控制。
+        \item 主导将 SHAPE-IT 扩展为可交互系统，使用户能够通过对话式语言输入实时生成与重构三维形状。
+        \item 开发基于大语言模型的自适应代理，根据持续进行的用户交互动态修改形状显示控制脚本。
+        \item 研究 AI 驱动创作工具在拓展可触交互与形变界面表达力和可用性方面的作用。
+    \end{itemize} \\
+
+    \textbf{2022} & \textbf{Kolmostar，软件工程实习生} \\
+    & \begin{itemize}[leftmargin=*, nosep, after=\vspace{4pt}]
+        \item 研究高密度城市环境中无线芯片信号传播与衰减规律。
+        \item 构建仿真流程以建模城市几何结构，并量化遮挡对信号强度的影响。
+        \item 设计交互式可视化工具，支持大规模城市感知系统的分析与部署规划。
+    \end{itemize} \\
+
+    \textbf{2021--2022} & \textbf{Georgia Tech Borg Lab，实验室助理} \\
+    & \begin{itemize}[leftmargin=*, nosep, after=\vspace{4pt}]
+        \item 结合大尺度缆索机器人、机械臂与人类艺术输入，探索机器人系统作为表达媒介的可能性。
+        \item 开发运动规划与轨迹优化方法，以实现平滑、类人的机器人绘画与书写行为。
+        \item 探索艺术笔触的计算表征方法，包括基于多项式的模型和可变形虚拟画笔动力学。
+        \item 整合动作捕捉与机器人控制，以分析并复现人类艺术创作轨迹。
+    \end{itemize} \\
+
+    \textbf{2019} & \textbf{Megvii，机器人软件解决方案实习生} \\
+    & \begin{itemize}[leftmargin=*, nosep, after=\vspace{4pt}]
+        \item 研究高自由度工业机械臂在受限环境中的采样式运动规划算法。
+        \item 实现并评估概率式与图搜索式规划器，分析其在效率、鲁棒性与收敛性之间的权衡。
+        \item 开发可视化工具，用于分析不同任务几何条件下规划器的行为与性能。
+    \end{itemize}
+\end{tabularx}
+
+% ----------------------------------------------------------------------------------
+% TEACHING
+% ----------------------------------------------------------------------------------
+\section*{教学经历}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    \textbf{2025} & \textbf{助教：CSCI 445: Introduction to Robotics} \\
+    & University of Southern California \\ [4pt]
+
+    \textbf{2023} & \textbf{助教：CMSC 25040: Introduction to Computer Vision} \\
+    & University of Chicago \\
+\end{tabularx}
+
+% ----------------------------------------------------------------------------------
+% SERVICE & OUTREACH
+% ----------------------------------------------------------------------------------
+\section*{学术服务与社会参与}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{\datecolwidth} X@{}}
+    \textbf{指导} & \textbf{\href{https://viterbiundergrad.usc.edu/research/curve/}{USC CURVE Program Mentor}}（2025春、2025秋、2026春） \\
+    & 指导本科生参与科研。 \\[4pt]
+    
+    & \textbf{\href{https://viterbischool.usc.edu/sure/}{USC Viterbi SURE Program Mentor}}（2025夏） \\
+    & 本科生暑期科研项目导师。 \\[6pt]
+
+    \textbf{公益推广} & \textbf{\href{https://www.peace4kids.org/}{Peace4Kids}} \\
+    & 机器人工作坊组织者 / 导师。 \\[6pt]
+
+    \textbf{审稿} & CHI、UIST、IEEE Haptics Symposium、IEEE Transactions on Haptics (ToH)。 \\[4pt]
+
+    \textbf{志愿服务} & RSS Conference Volunteer。 \\
+\end{tabularx}
+
+\end{CJK*}
+\end{document}
