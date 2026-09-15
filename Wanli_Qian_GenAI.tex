@@ -1,0 +1,103 @@
+% Compile with pdfLaTeX. No external assets or custom fonts required.
+% Content tailored only from the supplied CV and stated graduation term.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.60in,top=0.53in,bottom=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{titlesec,enumitem,xcolor,hyperref,fancyhdr}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\definecolor{navy}{RGB}{29,52,75}
+\hypersetup{colorlinks=true,urlcolor=navy,linkcolor=navy,pdfauthor={Wanli Qian},pdftitle={Wanli Qian -- Summer 2027 Research Internship}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{navy}Wanli Qian}
+\fancyfoot[R]{\footnotesize\thepage\ / 2}
+\setlength{\footskip}{18pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0em}{}[\vspace{-4pt}\rule{\textwidth}{0.45pt}]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+\setlist[itemize]{leftmargin=13pt,label=\textbullet,itemsep=2pt,topsep=3pt,parsep=0pt,partopsep=0pt}
+\newcommand{\role}[2]{\textbf{#1}\hfill\textit{#2}\par}
+\newcommand{\pub}[3]{\textbf{#1}\par #2\par #3\par\vspace{7pt}}
+\begin{document}
+\fontsize{10.5}{12.4}\selectfont
+{\fontsize{24}{27}\selectfont\textbf{Wanli Qian}}\par
+\vspace{3pt}
+\href{mailto:wanliqia@usc.edu}{wanliqia@usc.edu} \enspace|\enspace (678) 956-4378 \enspace|\enspace Los Angeles, CA\par
+\href{https://silverwings-zero.github.io/}{Website} \enspace|\enspace
+\href{https://www.linkedin.com/in/wanli-qian-7bb399192/}{LinkedIn} \enspace|\enspace
+\href{https://github.com/silverwings-zero}{GitHub} \enspace|\enspace
+\href{https://scholar.google.com/citations?user=azFoAIkAAAAJ&hl=en}{Google Scholar}\par
+\vspace{4pt}
+\textbf{Seeking Summer 2027 Research Internship}\par
+\textcolor{navy}{Generative AI | Multimodal Learning | Physical Interaction}\par
+\section*{Research Profile}
+CS Ph.D. researcher developing language-conditioned generative models and interactive systems that connect language, vision, and touch. Builds multimodal haptic datasets and AI-driven authoring tools for physical and virtual environments. First-authored work includes IEEE Haptics Symposium 2026 (paper award) and co-first-authored ACM UIST 2024 research.\par
+
+\section*{Education}
+\role{University of Southern California}{2024--Present}
+Ph.D. in Computer Science \hfill \textbf{Expected graduation: Fall 2028}\par
+\vspace{3pt}
+\role{University of Chicago}{2022--2024}
+Predoctoral M.S. in Computer Science\par
+\vspace{3pt}
+\role{Georgia Institute of Technology}{2018--2022}
+B.S. in Computer Science\par
+\section*{Research Experience}
+\role{USC HaRVI Lab | Ph.D. Researcher}{2024--Present}
+\begin{itemize}
+\item Develop language-conditioned generative models that synthesize tactile and vibration signals from force, acceleration, and vision-based tactile data.
+\item Curate multimodal haptic datasets spanning 200+ materials, combining tapping, sliding, audio, and affective descriptors to support model learning.
+\item Investigate how robots acquire, represent, and generate haptic understanding through multimodal sensing, language, and action.
+\item Integrate VR/AR and language-based interaction for haptic and texture authoring; build tactile-feedback teleoperation systems for perception and data collection.
+\item Study exploratory robot policies that adapt actions to reduce uncertainty about object and surface properties.
+\end{itemize}
+\vspace{3pt}
+\role{University of Chicago AxLab | Predoctoral Researcher}{2022--2024}
+\begin{itemize}
+\item Led SHAPE-IT development for on-the-fly 3D shape generation and physical reconfiguration from conversational language input.
+\item Developed adaptive LLM-based agents that modify control scripts during user interaction; investigated AI-driven authoring for tangible and shape-changing interfaces.
+\end{itemize}
+\vspace{3pt}
+\role{Georgia Tech Borg Lab | Lab Assistant}{2021--2022}
+\begin{itemize}
+\item Explored computational representations of artistic strokes, including polynomial models and deformable virtual brush dynamics.
+\item Combined motion capture, trajectory optimization, and robot control to reproduce human drawing and writing motions with physical robots.
+\end{itemize}
+\section*{Industry Experience}
+\role{Kolmostar | Software Engineer Intern}{2022}
+\begin{itemize}
+\item Built simulation pipelines modeling urban geometry and wireless-signal attenuation; created interactive visualization tools for analysis and deployment planning.
+\end{itemize}
+\vspace{3pt}
+\role{Megvii | Robotics Software Solution Intern}{2019}
+\begin{itemize}
+\item Implemented and benchmarked probabilistic and graph-based motion planners for industrial manipulators, with visualizations of planner behavior across task geometries.
+\end{itemize}
+\newpage
+\section*{Selected Publications}
+\pub{Language-Guided Multimodal Texture Authoring via Generative Models.}{\textbf{Wanli Qian}, Michael Gu, Aiden Chang, Shihan Lu, Heather Culbertson.}{\textit{IEEE Haptics Symposium, 2026.} \enspace \href{https://arxiv.org/abs/2604.06489}{Paper} \enspace|\enspace \href{https://youtu.be/f5vz52uPw-4}{Video}\par\textbf{Distinguished Technical Long Paper Award}}
+\pub{Shape n'Swarm: Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs.}{Matthew Jeung, Anup Sathya, \textbf{Wanli Qian}, Steven Arellano, Luke Jimenez, Ken Nakagaki.}{\textit{ACM UIST, 2025.} \enspace \href{https://dl.acm.org/doi/10.1145/3746059.3747781}{Paper} \enspace|\enspace \href{https://www.youtube.com/watch?v=5u0M9yL7tyY}{Video}}
+\pub{SHAPE-IT: Exploring Text-to-Shape-Display for Generative Shape-Changing Behaviors with LLMs.}{\textbf{Wanli Qian}*, Chenfeng Gao*, Anup Sathya, Ryo Suzuki, Ken Nakagaki.}{\textit{ACM UIST, 2024. *Equal contribution.} \enspace \href{https://dl.acm.org/doi/10.1145/3654777.3676348}{Paper} \enspace|\enspace \href{https://www.youtube.com/watch?v=2NxzOBc7AdQ}{Video}}
+\pub{Weakly Supervised Part-Based Method for Combined Object Detection in Remote Sensing Imagery.}{\textbf{Wanli Qian}, Zhe Yan, Zhe Zhu, Wei Yin.}{\textit{IEEE JSTARS, vol. 15, pp. 5024--5036, 2022.} \enspace \href{https://ieeexplore.ieee.org/document/9789416}{Paper}}
+\pub{Dynamic Pseudo-Label Generation for Weakly Supervised Object Detection in Remote Sensing Images.}{Hui Wang, Hao Li, \textbf{Wanli Qian}, Wenhui Diao, Liangjin Zhao, Jinghua Zhang, Daobing Zhang.}{\textit{Remote Sensing, vol. 13, no. 8, p. 1461, 2021.} \enspace \href{https://www.mdpi.com/2072-4292/13/8/1461}{Paper}}
+\section*{Manuscripts Under Review}
+\pub{TouchTwin: Human-in-the-Loop Haptic Texturing of 3D-Scanned Tabletop Scenes with Vision--Language Recognition and Language-Guided Generation.}{\textbf{Wanli Qian} et al.}{\textit{Submitted to ACM CHI 2027; under review.}}
+\pub{Feeling What the Gripper Feels: Haptic Rendering of a Grasped Object from Tactile Video in Teleoperation.}{\textbf{Wanli Qian} et al.}{\textit{Submitted to IEEE Robotics and Automation Letters (RA-L); under review.}}
+
+\section*{Teaching}
+\textbf{CSCI 445: Introduction to Robotics} | Teaching Assistant, USC \hfill 2025\par
+\vspace{3pt}
+\textbf{CMSC 25040: Introduction to Computer Vision} | Teaching Assistant, UChicago \hfill 2023\par
+\section*{Service \& Outreach}
+\textbf{Reviewing:} CHI, UIST, IEEE Haptics Symposium, IEEE Transactions on Haptics.\par
+\vspace{3pt}
+\textbf{Mentorship:} USC CURVE (Spring/Fall 2025, Spring/Fall 2026); USC Viterbi SURE (Summer 2025); USC REU (Summer 2026).\par
+\vspace{3pt}
+\textbf{Outreach:} Peace4Kids robotics workshop organizer/mentor; RSS conference volunteer.\par
+\end{document}
