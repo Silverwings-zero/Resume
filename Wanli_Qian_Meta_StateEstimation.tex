@@ -1,0 +1,146 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[margin=0.6in,top=0.5in,bottom=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks,pdftitle={Wanli Qian -- Summer 2027 Research Internship},pdfauthor={Wanli Qian}]{hyperref}
+
+\definecolor{navy}{HTML}{1F3A60}
+\definecolor{todo}{HTML}{C0392B}
+\hypersetup{colorlinks=true,urlcolor=navy,linkcolor=navy}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\small\color{navy}Wanli Qian}
+\fancyfoot[R]{\small\thepage\ / \pageref{LastPage}}
+
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\color{navy}\bfseries}{}{0pt}{}[\vspace{-6pt}\color{black}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt,label=\textbullet,after=\vspace{3pt}}
+
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textit{#2}\\}
+\newcommand{\sub}[2]{#1\hfill\textbf{#2}\\}
+\newcommand{\pub}[3]{\begin{minipage}[t]{\linewidth}#1\\[-1pt]#2\\[-1pt]#3\end{minipage}\par\vspace{5pt}}
+\newcommand{\me}{\textbf{Wanli Qian}}
+\newcommand{\todo}[1]{\textcolor{todo}{[#1]}}
+
+\begin{document}
+
+{\fontsize{24}{26}\selectfont\bfseries Wanli Qian}\\[3pt]
+\href{mailto:wanliqia@usc.edu}{wanliqia@usc.edu} \enspace|\enspace (678) 956-4378 \enspace|\enspace Los Angeles, CA\\
+\href{https://silverwings-zero.github.io/}{Website} \enspace|\enspace
+\href{https://www.linkedin.com/in/wanli-qian-7bb399192/}{LinkedIn} \enspace|\enspace
+\href{https://github.com/silverwings-zero}{GitHub} \enspace|\enspace
+\href{https://scholar.google.com/citations?user=azFoAIkAAAAJ&hl=en}{Google Scholar}\\[4pt]
+\textbf{Seeking Summer 2027 Research Scientist Internship}\\
+{\color{navy}Tactile State Estimation \,|\, Dexterous Manipulation \,|\, Teleoperation}
+
+\section{Research Profile}
+CS Ph.D. researcher studying how robots estimate the physical state and properties of objects through touch, multimodal
+sensing, and action. Builds tactile-feedback teleoperation systems for contact-rich manipulation and data collection, and
+develops learned models of force, vibration, and vision-based tactile signals. Research spans active perception under
+uncertainty, manipulation, and trajectory optimization; recipient of a 2026 IEEE Haptics Symposium paper award.
+
+\section{Education}
+\entry{University of Southern California}{2024--Present}
+\sub{Ph.D. in Computer Science}{Expected graduation: Fall 2028}
+\entry{University of Chicago}{2022--2024}
+Predoctoral M.S. in Computer Science\\
+\entry{Georgia Institute of Technology}{2018--2022}
+B.S. in Computer Science
+
+\section{Technical Skills}
+\textbf{Methods:} tactile perception (vision-based tactile, force, accelerometer), active perception, bilateral teleoperation,
+haptic rendering, generative modeling, trajectory optimization, sampling- and graph-based motion planning, motion capture\\
+\textbf{Tools:} \todo{List languages \& frameworks, e.g.\ Python, PyTorch, C++, ROS/ROS 2, GTSAM, MuJoCo/Isaac, GelSight/DIGIT --- keep only what you use}
+
+\section{Research Experience}
+\entry{USC HaRVI Lab \,|\, Ph.D. Researcher}{2024--Present}
+\vspace{-11pt}
+\begin{itemize}
+  \item Convert vision-based tactile video of a grasped object into haptic feedback for the operator, conveying the contact
+        interactions the gripper experiences during teleoperation (first-author RA-L submission, under review).
+  \item Build bilateral teleoperation systems with tactile feedback for contact-rich manipulation, remote surface perception,
+        and demonstration data collection.
+  \item Develop active haptic perception policies that select exploratory robot actions to reduce uncertainty in estimates of
+        object and surface physical properties.
+  \item Curate multimodal contact datasets spanning 200+ materials, combining force, acceleration, audio, and vision-based
+        tactile signals from tapping and sliding interactions.
+  \item Develop language-conditioned generative models of tactile and vibration signals; integrate them into VR/AR
+        haptic authoring interfaces (IEEE Haptics 2026, Distinguished Technical Long Paper Award).
+\end{itemize}
+
+\entry{University of Chicago AxLab \,|\, Predoctoral Researcher}{2022--2024}
+\vspace{-11pt}
+\begin{itemize}
+  \item Led SHAPE-IT (UIST 2024, co-first author), an interactive system for conversational 3D shape generation and
+        real-time reconfiguration of actuated physical shape displays.
+  \item Developed adaptive LLM-based agents that modify shape-display control scripts in response to ongoing interaction.
+\end{itemize}
+
+\entry{Georgia Tech Borg Lab \,|\, Lab Assistant}{2021--2022}
+\vspace{-11pt}
+\begin{itemize}
+  \item Developed motion planning and trajectory optimization methods for cable-driven parallel robots and articulated
+        manipulators performing drawing and writing tasks (ICRA 2022).
+  \item Integrated motion capture with robot control to track and reproduce human artistic trajectories; modeled strokes
+        with polynomial fits and deformable virtual brush dynamics.
+\end{itemize}
+
+\section{Industry Experience}
+\entry{Kolmostar \,|\, Software Engineer Intern}{2022}
+\vspace{-11pt}
+\begin{itemize}
+  \item Built urban-geometry simulation pipelines to quantify wireless-signal shadowing, with visualization tools supporting
+        sensing-system deployment.
+\end{itemize}
+\entry{Megvii \,|\, Robotics Software Solution Intern}{2019}
+\vspace{-11pt}
+\begin{itemize}
+  \item Implemented and benchmarked probabilistic and graph-based motion planners for high-DOF industrial manipulators;
+        analyzed efficiency, robustness, and convergence across task geometries.
+\end{itemize}
+
+\section{Publications}
+{\color{navy}\textbf{Under Review}}\par\vspace{3pt}
+\pub{\textbf{Feeling What the Gripper Feels: Haptic Rendering of a Grasped Object from Tactile Video in Teleoperation.}}
+    {\me\ et al.}
+    {Submitted to \textit{IEEE Robotics and Automation Letters (RA-L)}; under review.}
+\pub{\textbf{TouchTwin: Human-in-the-Loop Haptic Texturing of 3D-Scanned Tabletop Scenes with Vision--Language Recognition and Language-Guided Generation.}}
+    {\me\ et al.}
+    {Submitted to \textit{ACM CHI 2027}; under review.}
+
+{\color{navy}\textbf{Published}}\par\vspace{3pt}
+\pub{\textbf{Language-Guided Multimodal Texture Authoring via Generative Models.}}
+    {\me, Michael Gu, Aiden Chang, Shihan Lu, Heather Culbertson.}
+    {\textit{IEEE Haptics Symposium}, 2026. \href{https://arxiv.org/abs/2604.06489}{Paper} | \href{https://youtu.be/f5vz52uPw-4}{Video} \enspace\textbf{Distinguished Technical Long Paper Award}}
+\pub{\textbf{GTGraffiti: Spray Painting Graffiti Art from Human Painting Motions with a Cable Driven Parallel Robot.}}
+    {Gerry Chen, Sereym Baek, JD Florez, \me, Sang-won Leigh, Seth Hutchinson, Frank Dellaert.}
+    {\textit{IEEE ICRA}, 2022. \href{https://ieeexplore.ieee.org/document/9812008}{Paper} | \href{https://www.youtube.com/watch?v=R4ySYTNGv6s}{Video}}
+\pub{\textbf{SHAPE-IT: Exploring Text-to-Shape-Display for Generative Shape-Changing Behaviors with LLMs.}}
+    {\me*, Chenfeng Gao*, Anup Sathya, Ryo Suzuki, Ken Nakagaki.}
+    {\textit{ACM UIST}, 2024. *Equal contribution. \href{https://dl.acm.org/doi/10.1145/3654777.3676348}{Paper} | \href{https://www.youtube.com/watch?v=2NxzOBc7AdQ}{Video}}
+\pub{\textbf{Shape n'Swarm: Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs.}}
+    {Matthew Jeung, Anup Sathya, \me, Steven Arellano, Luke Jimenez, Ken Nakagaki.}
+    {\textit{ACM UIST}, 2025. \href{https://dl.acm.org/doi/10.1145/3746059.3747781}{Paper} | \href{https://www.youtube.com/watch?v=5u0M9yL7tyY}{Video}}
+\pub{\textbf{Weakly Supervised Part-Based Method for Combined Object Detection in Remote Sensing Imagery.}}
+    {\me, Zhe Yan, Zhe Zhu, Wei Yin.}
+    {\textit{IEEE JSTARS}, vol.\ 15, pp.\ 5024--5036, 2022. \href{https://ieeexplore.ieee.org/document/9789416}{Paper}}
+
+\section{Teaching}
+\entry{CSCI 445: Introduction to Robotics \,|\, Teaching Assistant, USC}{2025}
+\entry{CMSC 25040: Introduction to Computer Vision \,|\, Teaching Assistant, UChicago}{2023}
+
+\section{Service \& Outreach}
+\textbf{Reviewing:} CHI, UIST, IEEE Haptics Symposium, IEEE Transactions on Haptics.\\
+\textbf{Mentorship:} USC CURVE (Spring/Fall 2025, Spring/Fall 2026); USC Viterbi SURE (Summer 2025); USC REU (Summer 2026).\\
+\textbf{Outreach:} Peace4Kids robotics workshop organizer/mentor; RSS conference volunteer.
+
+\end{document}
