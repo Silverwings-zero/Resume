@@ -8,7 +8,7 @@
 \usepackage{tabularx}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage[hidelinks,pdftitle={Wanli Qian -- Summer 2027 Research Internship},pdfauthor={Wanli Qian}]{hyperref}
+\usepackage[hidelinks,pdftitle={Wanli Qian -- Research Scientist Intern, State Estimation for Dexterous Manipulation},pdfauthor={Wanli Qian}]{hyperref}
 
 \definecolor{navy}{HTML}{1F3A60}
 \definecolor{todo}{HTML}{C0392B}
@@ -40,13 +40,14 @@
 \href{https://github.com/silverwings-zero}{GitHub} \enspace|\enspace
 \href{https://scholar.google.com/citations?user=azFoAIkAAAAJ&hl=en}{Google Scholar}\\[4pt]
 \textbf{Seeking Summer 2027 Research Scientist Internship}\\
-{\color{navy}Tactile State Estimation \,|\, Dexterous Manipulation \,|\, Teleoperation}
+{\color{navy}Tactile Representation Learning \,|\, Object State Estimation \,|\, Dexterous Manipulation \& Teleoperation}
 
 \section{Research Profile}
-CS Ph.D. researcher studying how robots estimate the physical state and properties of objects through touch, multimodal
-sensing, and action. Builds tactile-feedback teleoperation systems for contact-rich manipulation and data collection, and
-develops learned models of force, vibration, and vision-based tactile signals. Research spans active perception under
-uncertainty, manipulation, and trajectory optimization; recipient of a 2026 IEEE Haptics Symposium paper award.
+CS Ph.D. researcher working at the intersection of representation learning, contact-based estimation, and robotic
+manipulation. Learns latent representations of object and surface physical properties from multimodal contact signals
+(vision-based tactile, force, vibration, audio) and uses them for generative modeling, uncertainty-driven active perception,
+and tactile-feedback teleoperation. Validates methods through controlled experiments and human-subject studies;
+first-author work received a 2026 IEEE Haptics Symposium paper award.
 
 \section{Education}
 \entry{University of Southern California}{2024--Present}
@@ -57,40 +58,43 @@ Predoctoral M.S. in Computer Science\\
 B.S. in Computer Science
 
 \section{Technical Skills}
-\textbf{Methods:} tactile perception (vision-based tactile, force, accelerometer), active perception, bilateral teleoperation,
-haptic rendering, generative modeling, trajectory optimization, sampling- and graph-based motion planning, motion capture\\
-\textbf{Tools:} Python, C++, PyTorch, NumPy/SciPy, ROS/ROS 2, GTSAM, OpenCV, MediaPipe, Unity (VR/AR), LLM APIs (OpenAI), Git, Linux
+\textbf{Methods:} representation learning and generative models (language-aligned latents, autoregressive and diffusion models);
+object/surface property estimation from contact (uncertainty-driven active perception, multi-sensory fusion); tactile sensing
+(vision-based tactile, force, accelerometer); bilateral teleoperation and haptic rendering; trajectory optimization and
+factor-graph estimation (GTSAM); motion planning; experimental design and statistical evaluation (human-subject studies)\\
+\textbf{Tools:} Python, PyTorch, NumPy/SciPy, C++, ROS/ROS 2, GTSAM, OpenCV, Unity (VR/AR), LLM APIs, Git, Linux
 
 \section{Research Experience}
 \entry{USC HaRVI Lab \,|\, Ph.D. Researcher}{2024--Present}
 \vspace{-11pt}
 \begin{itemize}
-  \item Convert vision-based tactile video of a grasped object into haptic feedback for the operator, conveying the contact
-        interactions the gripper experiences during teleoperation (first-author RA-L submission, under review).
+  \item Learn shared, language-aligned latent representations of contact and material properties from multimodal signals
+        (force, acceleration, audio, vision-based tactile), and use them to condition autoregressive and diffusion models that
+        generate tactile and vibration signals (IEEE Haptics 2026, Distinguished Technical Long Paper Award).
+  \item Develop active haptic perception policies that select exploratory actions (tapping, sliding) to reduce uncertainty in
+        online estimates of object and surface physical properties.
+  \item Infer the contact interactions of a grasped object from vision-based tactile video and render them as haptic feedback
+        to the teleoperator (first-author submission, under review).
   \item Build bilateral teleoperation systems with tactile feedback for contact-rich manipulation, remote surface perception,
         and demonstration data collection.
-  \item Develop active haptic perception policies that select exploratory robot actions to reduce uncertainty in estimates of
-        object and surface physical properties.
-  \item Curate multimodal contact datasets spanning 200+ materials, combining force, acceleration, audio, and vision-based
-        tactile signals from tapping and sliding interactions.
-  \item Develop language-conditioned generative models of tactile and vibration signals; integrate them into VR/AR
-        haptic authoring interfaces (IEEE Haptics 2026, Distinguished Technical Long Paper Award).
+  \item Curate a multi-sensory contact dataset spanning 200+ materials from tapping and sliding interactions; evaluate learned
+        models in controlled experiments and human-subject studies.
 \end{itemize}
 
 \entry{University of Chicago AxLab \,|\, Predoctoral Researcher}{2022--2024}
 \vspace{-11pt}
 \begin{itemize}
-  \item Led SHAPE-IT (UIST 2024, co-first author), an interactive system for conversational 3D shape generation and
-        real-time reconfiguration of actuated physical shape displays.
-  \item Developed adaptive LLM-based agents that modify shape-display control scripts in response to ongoing interaction.
+  \item Led SHAPE-IT (UIST 2024, co-first author), an interactive system that generates and reconfigures actuated physical
+        shape displays in real time from conversational input.
+  \item Built adaptive LLM-based agents that rewrite shape-display control scripts online in response to user interaction.
 \end{itemize}
 
 \entry{Georgia Tech Borg Lab \,|\, Lab Assistant}{2021--2022}
 \vspace{-11pt}
 \begin{itemize}
-  \item Developed motion planning and trajectory optimization methods for cable-driven parallel robots and articulated
-        manipulators performing drawing and writing tasks (ICRA 2022).
-  \item Integrated motion capture with robot control to track and reproduce human artistic trajectories; modeled strokes
+  \item Developed trajectory optimization and motion planning methods (factor graphs, GTSAM) for a cable-driven parallel
+        robot and articulated manipulators performing painting and writing tasks (ICRA 2022).
+  \item Tracked human painting motions with motion capture and reconstructed them as robot trajectories; modeled strokes
         with polynomial fits and deformable virtual brush dynamics.
 \end{itemize}
 
@@ -98,8 +102,7 @@ haptic rendering, generative modeling, trajectory optimization, sampling- and gr
 \entry{Kolmostar \,|\, Software Engineer Intern}{2022}
 \vspace{-11pt}
 \begin{itemize}
-  \item Built urban-geometry simulation pipelines to quantify wireless-signal shadowing, with visualization tools supporting
-        sensing-system deployment.
+  \item Simulated wireless-signal shadowing from urban geometry; built visualization tools for sensing-system deployment planning.
 \end{itemize}
 \entry{Megvii \,|\, Robotics Software Solution Intern}{2019}
 \vspace{-11pt}
@@ -112,8 +115,8 @@ haptic rendering, generative modeling, trajectory optimization, sampling- and gr
 {\color{navy}\textbf{Under Review}}\par\vspace{3pt}
 \pub{\textbf{Feeling What the Gripper Feels: Haptic Rendering of a Grasped Object from Tactile Video in Teleoperation.}}
     {\me\ et al.}
-    {Submitted to \textit{IEEE Robotics and Automation Letters (RA-L)}; under review.}
-\pub{\textbf{TouchTwin: Human-in-the-Loop Haptic Texturing of 3D-Scanned Tabletop Scenes with Vision--Language Recognition and Language-Guided Generation.}}
+    {Manuscript under review.}
+\pub{\textbf{TouchTwin: Human--AI Haptic Authoring for 3D-Scanned Tabletop Scenes through Language and Touch.}}
     {\me\ et al.}
     {Submitted to \textit{ACM CHI 2027}; under review.}
 
